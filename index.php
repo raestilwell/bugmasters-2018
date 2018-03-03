@@ -41,7 +41,7 @@
 				        </div>
 				        <div class="swiper-slide sl-two">
 					        <h2 class="sl-white-banner"> What's <span class="red-text">Bugging</span> You?</h2>
-					        <a href="#"><button class="btn banner-btn">Check Our Pest Library</button></a>
+					        <a href="http://bugmastersmurray.com/site/pest-library/"><button class="btn banner-btn">Check Our Pest Library</button></a>
 					    </div>
 				        <div class="swiper-slide sl-three">
 					        <h2 class="sl-white-banner">Termites can do irreparable damage to your home</h2>
