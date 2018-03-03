@@ -17,75 +17,18 @@
 
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     
    
   </head>
   <body>
 	  
     <div class="container">
-	   <header>
-		   <div class="row justify-content-center align-items-center">
-			   <div class="col-6">
-				   <a href="#"><img src="assets/images/logo_100h.png" class="img-fluid" alt="Bug Master's Logo"></a>
-			   </div>
-			   <div class="co-2 header-info">
-				   <div class="row">
-					   <div class="col-2 align-self-start">
-						   <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-					   </div>
-					   
-					   <div class="col-10">
-						   <p>Phone:</p>
-						   <p>KY: (270) 761-BUGS</p>
-						   <p>TN: (731)642-9367</p>
-					   </div>
-				   </div>
-			   </div>
-			   <div class="col-2 header-info">
-				   <div class="row">
-					   <div class="col-2 align-self-start">
-						   <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-					   </div>
-					   <div class="col-10">
-						   <p>Address:</p>
-						   <p>414 N 4th St.</p>
-						   <p>Murray, KY 42071</p>
-					   </div>
-			   </div>
-		   </div> 
-		</header>
+		<?php include 'template/header.html'; ?>
 	
-	   <div class="row justify-content-center">
-		   <div class="col">
-		   		<nav class="navbar navbar-expand-md navbar-light bg-light mb-3 nav-bg-custom">
-		   			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-		   				<span class="navbar-toggler-icon"></span>
-		   			</button>
-		   			
-		   			<div class="collapse navbar-collapse" id="navbarCollapse">
-		   				<ul class="navbar-nav text-md-center nav-justified w-100">
-				        	<li class="nav-item">
-				            	<a class="nav-link" href="#">Home</a>
-				            </li>
-				            
-				            <li class="nav-item">
-				            	<a class="nav-link" href="#">Services</a>
-				            </li>
-				            
-				            <li class="nav-item">
-				            	<a class="nav-link" href="#">Pest Library</a>
-				            </li>
-				            
-				            <li class="nav-item">
-				            	<a class="nav-link" href="#">Contact</a>
-				            </li>
-				        </ul>
-          			</div>
-        		</nav>
-		   </div>
-	   </div>
+	   <?php include 'template/nav.html'; ?>
 	   
+	   <!-- Slider -->
 	   <div class="row">
 		   <div class="col">
 			   <div class="swiper-container">
@@ -112,6 +55,7 @@
 			</div>
 	   </div>
 	
+	   <!-- Begin Body Content-->
 	   <div class="row justify-content-center home-main">
 		   <div class="col">
 				<h1 class="text-center">Welcome to Bug Masters, <small>LLC</small></h1>
@@ -125,63 +69,8 @@
 				<p>Bug Masters is putting honesty and integrity back into the pest control industry!</p>
 		   </div>
 	   </div>
-    	   
-    	<div class="row justify-content-center footer-divide">
-	    	<div class="col"></div>
-		</div>
-		   	   
-	   <footer class="footer">
-		   
-		   <div class="row justify-content-center footer-contact">
-			   <div class="col contact-col">
-				  <h3 class="text-center">- Contact us -</h3>
-				   
-				   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.4432847656185!2d-88.30428225024474!3d36.61571508566635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887a52c11fce4a3d%3A0x56552d1c764c4376!2sBug+Masters+LLC!5e0!3m2!1sen!2sus!4v1512020101385" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-			   		
-			   		<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-			   		<div class="footer-contact-info">
-				   		<p>414 N 4th St.</p>
-						<p>Murray, KY 42071</p>
-			   		</div>
-					
-					<br/>
-					
-					<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-					<div class="footer-contact-info">
-						<p>KY: (270) 761-BUGS</p>
-						<p>TN: (731)642-9367</p>
-					</div>
-			   		
-		   		</div>
-			   
-			   <div class="col footer-about">
-				   <h3 class="text-center">- About Bug Masters -</h3>
-				   <p>Founded in 2007, Bug Masters is a locally owned and operated business situated in Murray, KY. With over thirty-seven years of combined experience, Johnny Hutching and Shane Cox pride themselves in providing a quality service for a quality price &mdash; keeping you pest free and worry free. </p>
-			   </div>
-			   
-			   <div class="col footer-nav">
-				   <h3 class="text-center">- Navigation -</h3>
-				   <ul>
-					   <li><a href="#">Home</a></li>
-					   <li><a href="#">Services</a></li>
-					   <li><a href="#">Pest Library</a></li>
-					   <li><a href="#">Contact Us</a></li>
-				   </ul>
-			   </div>
-		   </div>
-	   </footer>
-	   
-	   <div class="row justify-content-center footer-social">
-			<div class="col-10">
-				<p>&copy; Bug Masters, LLC 2017 | Website Design by <a href="http://raestilwell.com" target="_blank">Rae Stilwell</a></p>
-			</div>
-				
-			<div class="col-2">
-				<p class="text-right"><a href="https://www.facebook.com/BugMastersLLC/" target="_blank"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a></p>
-			</div>
-
-		</div>
-	</div>
+    	   		   	   
+	   <?php include 'template/footer.php'; ?>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

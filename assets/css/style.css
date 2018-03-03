@@ -25,7 +25,7 @@ Text Domain: bugmasters
 /* === Primary Layout === */
 html {
   min-height: 100%;
-  background: #1c6369 url("assets/images/bg2.jpg") repeat-x fixed bottom; }
+  background: #1c6369 url("../images/bg2.jpg") repeat-x fixed bottom; }
 
 body {
   background-color: transparent;
@@ -47,7 +47,7 @@ header {
 
 .header-container {
   height: 200px;
-  background-image: url("assets/images/truck2.jpg");
+  background-image: url("../images/truck2.jpg");
   background-size: cover;
   margin-top: -20px;
   display: flex;
@@ -66,9 +66,8 @@ header {
 
 .nav-bg-custom .nav-link {
   transition: all ease .3s; }
-
-.nav-bg-custom .nav-link:hover {
-  color: #9b0000 !important; }
+  .nav-bg-custom .nav-link:hover {
+    color: #9b0000 !important; }
 
 .footer {
   background-color: #ffea00;
@@ -89,7 +88,7 @@ header {
 .footer-social {
   width: 100%;
   margin-left: 0;
-  background: url("assets/images/footerpat.png");
+  background: url("../images/footerpat.png");
   background-color: #000;
   height: 50px; }
   .footer-social p {
@@ -175,10 +174,62 @@ header {
   border-top: 5px #9b0000 solid;
   box-shadow: 0 0 10px -5px #333; }
 
+.lib-thumb {
+  overflow: hidden;
+  position: relative; }
+
+.title-slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 185px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  background: rgba(155, 0, 0, 0.9);
+  color: #fff;
+  text-align: center; }
+  .title-slide p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -10px; }
+
+.lib-thumb:hover .title-slide {
+  top: 0; }
+
 .bugs-container .row .col {
-  box-shadow: 0 0 10px -5px #333; }
+  cursor: pointer;
+  padding: 0;
+  margin: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 3px #9b0000 solid; }
   .bugs-container .row .col img {
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    height: 100%;
+    width: 100%; }
+
+.no-border {
+  border: 1px solid transparent;
+  border-top: 3px solid transparent; }
+
+.lib-info-col {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 3px #9b0000 solid;
+  margin-left: 10px;
+  padding-top: 20px; }
+
+.library-big-img {
+  background-image: url("../images/library/mosquito.jpg");
+  background-repeat: none;
+  background-size: 100% 100%;
+  height: 200px;
+  box-shadow: 0 0 10px -5px #333;
+  margin-bottom: 10px; }
 
 /* === Text === */
 .red-text {
@@ -219,15 +270,15 @@ header {
   padding: 10px; }
 
 .sl-one {
-  background: url("assets/images/truck.jpg");
+  background: url("../images/truck.jpg");
   background-size: cover; }
 
 .sl-two {
-  background: url("assets/images/hole-banner.jpg");
+  background: url("../images/hole-banner.jpg");
   background-size: cover; }
 
 .sl-three {
-  background: url("assets/images/termites-banner.jpg");
+  background: url("../images/termites-banner.jpg");
   background-size: cover; }
 
 .banner-btn {
@@ -244,6 +295,7 @@ header {
 .banner-btn:hover {
   background-color: #dfcd00; }
 
+/* Media Queries */
 @media (min-width: 768px) {
   .navbar-nav {
     display: -ms-flexbox;
@@ -252,5 +304,30 @@ header {
   .navbar-nav .nav-item {
     -ms-flex: 1 0 auto;
     flex: 1 0 auto; } }
+@media (max-width: 992px) {
+  .med-hide {
+    display: none; } }
+@media (max-width: 767px) {
+  .sm-hide {
+    display: none; }
+
+  .footer-social {
+    font-size: .7em; }
+    .footer-social i {
+      font-size: 1.7em; }
+
+  .logo-head {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+
+  .title-slide p {
+    font-size: .5em; }
+
+  .sl-red-banner, .sl-white-banner, .banner-btn {
+    font-size: .95em;
+    left: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
