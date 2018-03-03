@@ -1,0 +1,340 @@
+/*
+Theme Name: Bug Masters Murray Theme
+Author: Rae Stilwell
+Author URI: http://raestilwell.com
+Description: A Custom Theme for Bug Masters, LLC of Murray Ky. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bugmasters
+*/
+
+/**
+	* SASS
+	* Global Settings
+	* Primary Layout
+	* Secondary Layout
+	* Tertiary Layout
+	* Text
+	* Salient
+	* General Styles
+	* General Classes
+	* Misc.
+**/
+
+/* === SASS === */
+
+$yellow: #ffea00;
+$red: #9b0000;
+
+/* === GLOBAL SETTINGS === */
+
+/* === Primary Layout === */
+
+html {
+  min-height: 100%;
+  background: #1c6369 url("assets/images/bg2.jpg") repeat-x fixed bottom;
+}
+
+body {
+	background-color: transparent;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* === Secondary Layout === */
+
+header{
+	margin-top: 50px;
+	height: 150px;
+	padding-top: 25px;
+	border-radius: 100px 100px 0 0;
+	background-color: $yellow;
+}
+
+.header-info {
+	line-height: 2px;
+	color: #5f5d42;
+	
+	& p{
+		font-size: .8em;
+	}
+}
+
+
+.header-container{
+	height: 200px;
+	background-image: url('assets/images/truck2.jpg');
+	background-size: cover;
+	margin-top: -20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-red-banner{
+	float: left;
+	clear: left;
+	background: rgba(155,0,0,.9);
+	color: #fff;
+	padding: 10px;
+}
+
+
+.nav-bg-custom {
+	background-color: #fff!important;
+}
+
+.nav-bg-custom .nav-link {
+	transition: all ease .3s;
+}
+
+.nav-bg-custom .nav-link:hover {
+	color: $red!important;
+}
+
+.footer{
+	background-color: $yellow;
+	padding: 20px;
+}
+
+.footer .footer-about h3, .footer .footer-contact h3, .footer .footer-nav h3 {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: #000;
+}
+
+.footer-divide{
+	background-color: #5f5d42;
+	width: 100%;
+	margin-left: 0;
+	height: 5px;
+	
+}
+
+.footer-social{
+	width: 100%;
+	margin-left: 0;
+	background: url('assets/images/footerpat.png');
+	background-color: #000;
+	height: 50px;
+	
+	& p {
+		line-height: 50px;
+		margin-bottom: -20px;
+	}
+}
+
+.footer .contact-col p, .footer .contact-col i{
+	color: #5f5d42;
+}
+
+.footer-contact-info {
+	margin-top: 20px;
+	display: inline-block;
+	line-height: 2px;
+}
+
+.footer-social p{
+	color: rgba(255,255,255,.7);
+}
+
+.footer-social .fa, .footer-social a{
+	color: rgba(255,255,255,.8);
+	transition: all ease .3s;
+}
+
+.footer-social .fa:hover, .footer-social a:hover{
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+}
+
+.footer-nav ul{
+	list-style-type: none;
+	
+	& li{
+		border-bottom: 1px #5f5d42 solid;
+		padding: 10px 0;
+		
+		&:first-child{
+			border-top: 1px #5f5d42 solid;
+		}
+	}
+	
+	& a{
+		display: block;
+		width: 100%;
+		color: #5f5d42;
+		padding-left: 4px;
+		border-left: 5px rgba(155,0,0,0) solid;
+		transition: all ease .2s;
+		
+		&:hover{
+			text-decoration: none;
+			color: $red;
+			border-left: 5px rgba(155,0,0,1) solid;	
+		}
+	}
+}
+
+
+/* === Tertiary Layout === */
+
+.home-main{
+	background-color: #fff;
+	margin-left: 0px;
+	width: 100%;
+	padding: 20px 10px 10px;
+}
+
+.home-main h1{
+	margin-bottom: 15px;
+}
+
+.contact-main a{
+	color: $red;
+	position: relative;
+	margin: 0 2px;
+	
+	&:hover{
+		text-decoration: none;
+	}
+	
+	&:before{
+		position: absolute;
+		margin: 0 auto;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: $red;
+		content: '';
+		opacity: .3;
+		-webkit-transform: scaleX(.9);
+		transition-property: opacity, -webkit-transform;
+		transition-duration: .3s;
+	}
+	
+	&:hover:before{
+		opacity: 1;
+		-webkit-transform: scaleX(1);
+	}
+}
+
+.services-cont{
+	
+	& h3{
+		font-size: 1.4em;	
+	}
+	
+	& .row .col {
+		margin: 0 6px 15px;
+		padding-top: 10px;
+		border-top: 5px $red solid;
+		box-shadow: 0 0 10px -5px #333;
+	}
+}
+
+.bugs-container{
+	& .row .col {
+		box-shadow: 0 0 10px -5px #333;
+		
+		& img{
+			vertical-align: bottom;
+		}
+	}
+}
+
+/* === Text === */
+
+.red-text {
+	color: $red;
+}
+
+/* === Salient === */
+
+/* === General Styles === */
+
+/* === General Classes === */
+
+/* === Misc. === */
+
+.swiper-container {
+    width: 100%;
+    height: 250px;
+    margin-top: -16px;
+}
+
+.swiper-pagination-bullet{
+	background: $red;
+	opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.sl-white-banner{
+	float: left;
+	position: relative;
+	left: 80px;
+	top: 20px;
+	background: rgba(255,255,255,.9);
+	padding: 10px;
+}
+
+.sl-red-banner{
+	float: left;
+	clear: left;
+	background: rgba(155,0,0,.9);
+	color: #fff;
+	position: relative;
+	left: 80px;
+	top: 20px;
+	padding: 10px;
+}
+
+.sl-one {
+	background: url('assets/images/truck.jpg');
+	background-size: cover;
+}
+
+.sl-two {
+	background: url('assets/images/hole-banner.jpg');
+	background-size: cover;
+}
+
+.sl-three {
+	background: url('assets/images/termites-banner.jpg');
+	background-size: cover;
+}
+
+.banner-btn {
+	background-color: $yellow;
+	color: #000;
+	float: left;
+	clear: left;
+	position: relative;
+	left: 80px;
+	top: 20px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.banner-btn:hover{
+	background-color: #dfcd00;
+}
+
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .navbar-nav .nav-item {
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+}
